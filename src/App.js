@@ -4,15 +4,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Post from './Post';
 import Photos from './Photos';
+import Users from './Users';
+import Head from './component/Head';
 
 function App() {
   return (
-    <div className="App">
+    <div className='bg'>
+      
     <BrowserRouter>
+    <Head />
     <Routes>
       <Route 
       path='/'
-      element={<Home/>}
+      element ={<Home/>}
       />
     <Route 
     path='/post'
@@ -20,6 +24,9 @@ function App() {
     <Route
     path='/photos'
     element={<Photos/>}/>
+    <Route
+    path='/user'
+    element={<Users/>}/>
     </Routes>
     </BrowserRouter>
 
