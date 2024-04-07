@@ -1,20 +1,12 @@
-import React from 'react';
-
+import React from 'react'; 
+import "./App.css"
 
 function Home() {
-  const styleSheet = {
-    container: {
-    
-    },
-    heading:{
-      margin:"25%"
-    }
-  };
-
+  
   return (
-    <div style={styleSheet.container}>
+    <div className='bgimage'>
     
-      <h1 style={styleSheet.heading}>WElCOME TO DAILY BLOG</h1>
+      <h1 >WElCOME TO DAILY BLOG</h1>
     </div>
   );
 }

@@ -1,27 +1,31 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom"; // Ensure NavLink is imported
+import "../App.css"; // Assuming you're using App.css for your styles
 
 function Footer() {
-  const styles={
-    list:{
-      display:"grid",
-      gridTemplateColumns:"1fr 1fr 1fr 1fr"
-    }
-  }
-
   return (
-    <div>
-      <h1>Logo</h1>
-      <ul style={styles.list} className='grid listitems'>
-        <NavLink
-        to={"/"} className="navlink"><li>Home</li></NavLink>
-        <NavLink to={"/post"} className="navlink" ><li>Post</li></NavLink>
-        <NavLink to={"/photos"} className="navlink"><li>Photos</li></NavLink>
-        <NavLink to={"/"} className="navlink"><li>User</li></NavLink>
-      </ul>   
-      <h6>Comany @2024</h6>
-    </div>
-  )
+    <footer className="footer">
+      <div className="footer-nav">
+        <div><h1>Logo</h1>
+        <h6>All right reseved by ... </h6>
+        </div>
+        <ul className="grid listitems2">
+          <NavLink to={"/"} className="navlink">
+            <li>Home</li>
+          </NavLink>
+          <NavLink to={"/post"} className="navlink">
+            <li>Post</li>
+          </NavLink>
+          <NavLink to={"/photos"} className="navlink">
+            <li>Photos</li>
+          </NavLink>
+          <NavLink to={"/user"} className="navlink">
+            <li>User</li>
+          </NavLink>
+        </ul>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

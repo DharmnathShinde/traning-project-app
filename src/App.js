@@ -6,6 +6,7 @@ import Post from './Post';
 import Photos from './Photos';
 import Users from './Users';
 import Head from './component/Head';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -28,8 +29,11 @@ function App() {
     path='/user'
     element={<Users/>}/>
     </Routes>
+    <footer>
+      <Footer/>
+    </footer>
     </BrowserRouter>
-
+  
     </div>
   );
 }
